@@ -128,7 +128,7 @@ model.compile(loss='categorical_crossentropy',
 
 #np.reshape(x_train,(297960,28,28,1))
 #x_train.reshape(len(x_train),28,28,1)
-model.fit(x_train,y_train,epochs=10)
+model.fit(x_train,y_train,epochs=12)
 
 test_loss, test_accuracy = model.evaluate(x_test, y_test)
 model.save('./model.h5')

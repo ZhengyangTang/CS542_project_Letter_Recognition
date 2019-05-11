@@ -5,66 +5,66 @@ import os
 model = load_model('./model.h5')
 
 count = 0
-images = []
-
+#images = []
+images = 'Result: '
 for item in os.listdir('./'):
 
-    if item.endswith('1.png') or item.endswith('h.png'):
+    if item.endswith('.png'):
         image = mpimg.imread('./' + item)
         image = image.reshape(1,28,28,1).astype('float32')
         predict = model.predict(image)
         if predict[0][0]==1.0:
-            images.append('A')
+            images = (images+'A')
         if predict[0][1]==1.0:
-            images.append('B')
+            images = (images+'B')
         if predict[0][2]==1.0:
-            images.append('C')
+            images = (images+'C')
         if predict[0][3]==1.0:
-            images.append('D')
+            images = (images+'D')
         if predict[0][4]==1.0:
-            images.append('E')
+            images = (images+'E')
         if predict[0][5]==1.0:
-            images.append('F')
+            images = (images+'F')
         if predict[0][6]==1.0:
-            images.append('G')
+            images = (images+'G')
         if predict[0][7]==1.0:
-            images.append('H')
+            images = (images+'H')
         if predict[0][8]==1.0:
-            images.append('I')
+            images = (images+'I')
         if predict[0][9]==1.0:
-            images.append('J')
+            images = (images+'J')
         if predict[0][10]==1.0:
-            images.append('K')
+            images = (images+'K')
         if predict[0][11]==1.0:
-            images.append('L')
+            images = (images+'L')
         if predict[0][12]==1.0:
-            images.append('M')
+            images = (images+'M')
         if predict[0][13]==1.0:
-            images.append('N')
+            images = (images+'N')
         if predict[0][14]==1.0:
-            images.append('O')
+            images = (images+'O')
         if predict[0][15]==1.0:
-            images.append('P')
+            images = (images+'P')
         if predict[0][16]==1.0:
-            images.append('Q')
+            images = (images+'Q')
         if predict[0][17]==1.0:
-            images.append('R')
+            images = (images+'R')
         if predict[0][18]==1.0:
-            images.append('S')
+            images = (images+'S')
         if predict[0][19]==1.0:
-            images.append('T')
+            images = (images+'T')
         if predict[0][20]==1.0:
-            images.append('U')
+            images = (images+'U')
         if predict[0][21]==1.0:
-            images.append('V')
+            images = (images+'V')
         if predict[0][22]==1.0:
-            images.append('W')
+            images = (images+'W')
         if predict[0][23]==1.0:
-            images.append('X')
+            images = (images+'X')
         if predict[0][24]==1.0:
-            images.append('Y')
+            images = (images+'Y')
         if predict[0][25]==1.0:
-            images.append('Z')
+            images = (images+'Z')
 
 
 print(images)
