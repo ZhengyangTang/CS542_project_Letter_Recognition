@@ -13,3 +13,7 @@ Run CNN.py to train, test and generate model named 'model.h5'. The model is at [
 
 ## Predicting
 Run `Segment.py` to do the letter segmentation of the picture in the directory `orginal`, and then run predict.py to get the result for every file ends with '.png' under project directory, using trained model "model.h5".
+
+## Result Example
+
+![result](https://github.com/ZhengyangTang/CS542_project_Letter_Recognition/blob/master/result.JPG) 
