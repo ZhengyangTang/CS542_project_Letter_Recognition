@@ -2,14 +2,14 @@
 
 ## Dataset
 
-Download dataset from https://www.kaggle.com/sachinpatel21/az-handwritten-alphabets-in-csv-format, and put it under project directory.
+Download dataset from https://www.kaggle.com/sachinpatel21/az-handwritten-alphabets-in-csv-format, and put it at [GoogleDrive](https://drive.google.com/drive/folders/0AK8Vo4lZwwOiUk9PVA)
 Using 'csv-to-images.py' to transform the 'A_Z Handwritten Data.csv' to images.  
 
 ## Segmentation
 run `Segment.py` to do the letter segmentation of the picture in the directory of `orginal`  
 The output will be image files which are labled in `count_number.png` under the main directory.  
 ## Training
-Run CNN.py to train, test and generate model named 'model.h5'. 
+Run CNN.py to train, test and generate model named 'model.h5'. The model is at [GoogleDrive](https://drive.google.com/drive/folders/0AK8Vo4lZwwOiUk9PVA)
 
 ## Predicting
 Run `Segment.py` to do the letter segmentation of the picture in the directory `orginal`, and then run predict.py to get the result for every file ends with '.png' under project directory, using trained model "model.h5".
